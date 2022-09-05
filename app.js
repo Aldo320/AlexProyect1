@@ -1,6 +1,3 @@
-function saludar (Nombre= Apellido ){
-    console.log (Hola ${Nombre} " " ${Apellido} " ")
-}
 
 let option = prompt (`Elja Tu Marca de Calzado Favorita:
 1:Nike
@@ -10,63 +7,22 @@ let option = prompt (`Elja Tu Marca de Calzado Favorita:
 `)
 
 
+const productos = [
+    {id: 1, producto:"Nike AirMax", precio: 5490, disponible: true},
+    {id: 2, producto:"Adidas Coreracer", precio: 4290, disponible: true},
+    {id: 3, producto:"Puma Xray Deportivo", precio: 4990, disponible: true},
+    {id: 4, producto:"Reebok Triplehall", precio: 2880, disponible: true},
+    {id: 5, producto:"New Balance Lifestyle", precio: 3990, disponible: true},
+]
 
-const nombre = "Nike AirMax"
-const precio = 5490
-const disponible = true
 
-const producto = {
-    nombre: "Nike Airmax",
-    precio: 5490,
-    disponible: true,
+
+for (const producto of productos) {
+console.log (producto.id);
+console.log (producto.producto);
+
 }
 
-console.log(producto)
-
-const nombre1 = "Adidas Coreracer"
-const precio1 = 4290
-const disponible1 = true
-
-const producto1 = {
-    nombre: "Adidas Coreracer",
-    precio: 4290,
-    disponible: true,
-}
-
-console.log(producto1)
-
-const nombre2 = "Puma Xray Deportivo"
-const precio2 = 4990
-const disponible2 = true
-
-const producto2 = {
-    nombre: "Puma Xray Deportivo",
-    precio: 4990,
-    disponible: true,
-}
-
-console.log(producto2)
-
-const nombre3 = "Reebok Triplehall"
-const precio3 = 2850
-const disponible3 = true
-
-const producto3 = {
-    nombre: "Reebok Triplehall",
-    precio: 2850,
-    disponible: true,
-}
-
-console.log(producto3)
-
-const nombre4 = "New Balance Lifestyle"
-const precio4 = 3990
-const disponible4 = true
-
-const producto4 = {
-    nombre: "New Balance Lifestyle",
-    precio: 3990,
-    disponible: true,
-}
-
-console.log(producto4)
+function sumar (Numero1, Numero2, Numero3, Numero4, Numero5)
+let resultado = Numero1 + Numero2 + Numero3 + Numero4 + Numero5
+console.log (sumar(5490, 4290, 4990, 2880, 3990)) 
